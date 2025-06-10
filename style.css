@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -92,18 +92,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 5px;
+}
+
+.hero__image_placeholder_text {
     text-align: center;
 }
 
 .information {
-    text-align: center;
     padding: 50px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 30px;
 }
 
 .information__title {
+    text-align: center;
     font-size: 36px;
     color: var(--info-header-text-color);
     font-weight: 900;
@@ -113,7 +117,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 26px;
+    gap: 30px;
 }
 
 .information__card {
@@ -131,6 +135,33 @@ body {
     border: 3px solid var(--button-background-color);
 }
 
-.information_description {
+.information__description {
+    color: #323232;
+    text-align: center;
+}
 
+.quote {
+    background-color: var(--quote-section-background-color);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.quote__text {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 36px;
+    color: var(--quote-text-color);
+    max-width: 800px;
+}
+
+.quote__cite {
+    margin-bottom: 10px;
+}
+
+.quote__author {
+    font-size: 16px;
+    font-weight: 900;
+    text-align: right;
+    margin-right: 30px;
 }
